@@ -85,14 +85,16 @@ brain-tumor-classification/
    ```
 
 3. **Download the pre-trained model**
-   Since the model file is large (~500MB), download it from the link below and place it in the project root directory:
+   Download the model file and place it in the project root directory:
 
-   [**Download my_model.h5**](https://drive.google.com/your-model-link-here) *(Replace with actual link)*
+   [**Download my_model.h5**](https://github.com/Omotayo-Emmanuel/brain-tumour-classification/releases/download/v.0.0.2/my_model.h5)
 
-   Alternatively, you can train the model yourself (see Training section).
+4. **Download and setup the dataset**
+   Download the dataset and extract it to create the `braintumors` directory:
 
-4. **Organize your dataset**
-   Ensure your dataset follows the structure shown above in the `braintumors` directory.
+   [**Download Dataset**](https://github.com/Omotayo-Emmanuel/brain-tumour-classification/releases/download/v.0.0.2/Braintumour.zip)
+
+   Extract the zip file to create the directory structure shown above.
 
 ## Usage
 
@@ -113,12 +115,7 @@ brain-tumor-classification/
 
 If you want to train the model from scratch:
 
-1. **Update the dataset paths** in `model.py`:
-   ```python
-   TRAIN_DIR = "path/to/your/braintumors/train"
-   TEST_DIR = "path/to/your/braintumors/validation"
-   TEST_DIR_FINAL = "path/to/your/braintumors/test"
-   ```
+1. **Ensure the dataset is properly organized** in the `braintumors` directory
 
 2. **Run the training script**:
    ```bash
@@ -153,11 +150,17 @@ pip install -r requirements.txt
 
 - **app.py**: Streamlit web application for image classification
 - **model.py**: Script for training the VGG16-based model
-- **my_model.h5**: Pre-trained model weights (download separately)
+- **my_model.h5**: Pre-trained model weights (download from link above)
 
 ## Dataset
 
-The model is trained on a brain tumor MRI dataset containing four classes. Ensure your dataset is properly organized with separate directories for training, validation, and testing.
+The dataset can be downloaded from:  
+[https://github.com/Omotayo-Emmanuel/brain-tumour-classification/releases/download/v.0.0.2/Braintumour.zip](https://github.com/Omotayo-Emmanuel/brain-tumour-classification/releases/download/v.0.0.2/Braintumour.zip)
+
+## Acknowledgments
+
+We extend our gratitude to **Mr. Belllo Muhammed** for his guidance and support throughout this project.  
+**Email**: itsbellomuhammed@gmail.com
 
 ## Limitations
 
@@ -183,4 +186,3 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 ---
 
 **Note**: This tool is intended for educational and research purposes only and should not be used for actual medical diagnosis without proper clinical validation.
-
